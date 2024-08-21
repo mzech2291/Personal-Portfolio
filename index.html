@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Recently Sold</a></li>
+                <li><a href="#">Upcoming Pieces</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2 id="para">Hello,Welcome!</h2>
+            <section class="split-section">
+                <div class="text-content">
+                    <h1>I'm Alex Mckinley</h1>
+                    <p id="para">A professional artist with decades of experience in alcohol markers,wax colored pencils
+                        and oil
+                        paints. Email for commissions.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://img.freepik.com/premium-photo/male-artist-finishing-his-black-white-painting-white-background-drawing-art_140725-161468.jpg"
+                        alt="Artist" />
+                </div>
+            </section>
+        </main>
+    </div>
+
+    </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li>Email: <a href="mailto:info@example.com">alexmckinley@gmail.com</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function () {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
